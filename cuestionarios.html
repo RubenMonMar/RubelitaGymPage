@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rubén Montero Martín">
+    <meta name="description" content="Página de valoración">
+    <link rel="stylesheet" href="./Styles/valoracion.css">
+    <title>Valoración de la página</title>
+</head>
+<body>
+  <section class="secciones">
+    <form class="formulario">
+      <h1>Envio de información</h1>
+        <label for="nombre"><strong>Nombre *</strong></label>
+        <input class="rango" type="text" id="nombre" pattern="[A-ZÑÁÉÍÓÚ][a-zñáéíóú]+" required class="caja_formulario">  <br>
+
+        <label for="apellidos"><strong>Apellidos *</strong></label>
+        <input class="rango" type="text" id="apellidos" pattern="[A-ZÑÁÉÍÓÚ][a-zñáéíóú]+" required class="caja_formulario">  <br>
+
+        <label for="correo"><strong>Correo Electronico *</strong></label>
+        <input class="rango" type="email" id="correo" pattern="[A-Za-z][0-9][@][a-z].\[a-z]+" required class="caja_formulario"><br>
+
+        <label for="edad"><strong>Edad*</strong></label>
+        <input class="rango" type="date" id="edad" required class="caja_formulario">
+        <br><br>
+
+        
+          <p><strong>¿Quieres recibir información al correo?</strong></p>
+        <div class="cajas_info">
+          <label for="info_correo" class="opciones">Si
+          <input class="input_cuadros" type="checkbox" name="info_correo" id="info_correo" class="caja_formulario">
+          </label>
+
+        
+          <label for="info_correo" class="opciones">No
+          <input class="input_cuadros" type="checkbox" name="info_correo" id="info_correo" class="caja_formulario">
+          </label >
+        </div>
+
+        <div class="botones">
+          <a href="./index.html" class="enviar">Enviar</a>
+          <input type="reset" value="Cancelar" class="cancelar">
+        </div>
+    </form>
+  </section>
+  <section class="secciones">
+    <form class="formulario">
+        <h1>Valoración de Página Web</h1>
+
+        <label for="rango">Valoración (1-10):</label>
+        <input type="range" name="rango" min="1" max="10" value="5" class="rango">
+
+        <label for="comentario">Comentarios:</label>
+        <textarea name="comentario" rows="6" placeholder="Deja tus comentarios..."></textarea>
+
+        <label for="reason">¿Por qué visitaste la página?</label>
+        <select id="reason" name="reason">
+            <option value="info">Obtener información</option>
+            <option value="otros">Otros</option>
+        </select>
+
+        <div class="botones">
+          <a href="./index.html" class="enviar">Enviar</a>
+          <input type="reset" value="Cancelar" class="cancelar">
+        </div>
+    </form>
+  </section>
+</body>
+</html> 

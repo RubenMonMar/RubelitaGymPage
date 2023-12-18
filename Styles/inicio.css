@@ -1,0 +1,217 @@
+@import url('https://paletadecolores.com.mx/paleta/13141a/a90448/fb3640/fda543/17c69b/');
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&family=Fjalla+One&family=Inter:wght@100&family=Josefin+Sans:wght@200&family=Permanent+Marker&family=Roboto:wght@900&family=Saira+Extra+Condensed:wght@100&family=Yanone+Kaffeesatz:wght@200&display=swap');
+:root{
+    --color1: #13141a;
+    --color2: #a90448;
+    --color3: #fb3640;
+    --color4: #fda543;
+    --color5: #ffce96;
+
+    --letra_nav: 'Roboto', sans-serif;
+    --letra_titulo: 'Dhurjati', sans-serif;
+    --letra_texto_inicial: 'Inter', sans-serif;
+    --letra_titulo_contenido:'Permanent Marker', cursive;
+    --letra_contenido: 'Josefin Sans', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--color5);
+    margin-bottom: 3vh;
+}
+
+nav{
+    display: flex;
+    background-color: var(--color1);
+    padding: 10px;
+    width: 100vw;
+    height: 10vh;
+    text-transform: uppercase;
+    justify-content: space-between ;
+    position: fixed;
+    display: flex;
+}
+
+.imagen{
+    height: 5vh;
+}
+
+.titulo_nav{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: var(--color2);
+    gap: 10px;
+}
+
+.titulo_nav>h1>a{
+    font-family: var(--letra_nav);
+    text-decoration: none;
+    font-size: 50px;
+    color: white;
+}
+
+.titulo_nav_texto:hover{
+    color: var(--color2);
+}
+
+.contnav2{
+    display: flex;
+    flex-direction: row;
+}
+
+.enlaces{ 
+    font-family: var(--letra_nav);
+    display: flex;
+    justify-content: right ;
+    justify-items: right;
+    text-decoration: none;
+    margin-top: 35px;
+    margin-right: 40px;
+    font-size: 23px;
+    color: white;
+}
+
+.enlaces:hover{
+    color: var(--color2);
+}
+
+.contenido1{
+    background-color: var(--color4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    height: 60vh;
+}
+
+.internacabecera{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7vh;
+}
+
+.imagen_gym{
+    display: flex;
+    height: 50vh;
+}
+
+.texto_incio{
+    font-family: var(--letra_texto_inicial);
+    font-size: 18px;
+}
+
+.titulo_inicio{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo_sect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    
+}
+.titulo_sect>h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(255, 0, 0);
+    width: 30vw;
+    background-color: var(--color5);
+    height: 10vh;
+}
+
+
+.contenido_secciones{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 5vh;
+    margin-left: 10vw;
+    background-color: var(--color5);
+}
+
+
+
+.titulo_secciones{
+    font-size: 30px;
+}
+
+
+
+.titulo_secciones>a{ 
+    font-family: var(--letra_titulo_contenido);
+    text-decoration: none;
+    color: black;
+}
+
+.titulo_secciones>a:hover{
+    color: var(--color3);
+}
+
+
+.parrafo_secciones{
+    font-family: var(--letra_contenido);
+    font-size: 28px;
+    padding-top: 10px;
+    margin-right: 40px;
+    }
+
+.more{
+    text-decoration: none;
+    border-bottom: 0.125rem solid;
+    color: rgb(255, 0, 0);
+    align-self: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titulo_nav {
+        margin-bottom: 10px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .titulo_cont1{
+        font-size: 40px;
+    }
+
+    .enlaces {
+        margin: 10px;
+        font-size: 20px;
+    }
+
+    .titulo_sect>h2{
+        font-size: 30px;
+        width: 50vw;
+    }
+
+    .texto_incio{
+        font-size: 15px;
+        margin-left: 12vw;
+    }
+
+
+
+    .contenido_secciones{
+        margin-left: 5vw;
+    }
+}

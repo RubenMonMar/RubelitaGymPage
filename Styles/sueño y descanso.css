@@ -1,0 +1,259 @@
+@import url('https://paletadecolores.com.mx/paleta/13141a/a90448/fb3640/fda543/17c69b/');
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&family=Fjalla+One&family=Inter:wght@100&family=Josefin+Sans:wght@200&family=Permanent+Marker&family=Roboto:wght@900&family=Saira+Extra+Condensed:wght@100&family=Yanone+Kaffeesatz:wght@200&display=swap');
+:root{
+    --color1: #13141a;
+    --color2: #a90448;
+    --color3: #fb3640;
+    --color4: #fda543;
+    --color5: #ffce96;
+
+    --letra_nav: 'Roboto', sans-serif;
+    --letra_titulo: 'Dhurjati', sans-serif;
+    --letra_texto_inicial: 'Inter', sans-serif;
+    --letra_titulo_contenido:'Permanent Marker', cursive;
+    --letra_contenido: 'Josefin Sans', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--color5);
+    margin-bottom: 3vh;
+}
+
+nav{
+    display: flex;
+    background-color: var(--color1);
+    padding: 10px;
+    width: 100vw;
+    height: 10vh;
+    text-transform: uppercase;
+    justify-content: space-between ;
+    position: fixed;
+}
+
+.imagen{
+    height: 5vh;
+}
+
+.titulo_nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--color2);
+    gap: 10px;
+}
+
+.titulo_nav>h1>a{
+    font-family: var(--letra_nav);
+    text-decoration: none;
+    font-size: 50px;
+    color: white;
+}
+
+.contnav2{
+    display: flex;
+    flex-direction: row;
+}
+
+.enlaces{ 
+    font-family: var(--letra_nav);
+    display: flex;
+    justify-content: right ;
+    justify-items: right;
+    text-decoration: none;
+    margin-top: 35px;
+    margin-right: 40px;
+    font-size: 23px;
+    color: white;
+}
+
+.enlaces:hover{
+color: var(--color2);
+}
+
+.contenido1{
+    background-color: var(--color4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    height: 35vh;
+}
+
+.titulo_cont1{
+    margin-top: 10vh;
+    font-size: 48px;
+    font-family: 'Raleway',sans-serif;
+}
+
+.texto_incio{
+    font-size: 18px;
+    margin-top: 10px;
+    color: black;
+    font-family: var(--letra_texto_inicial);
+}
+
+.parrafo1{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    
+}
+
+.contenido2{
+    display: flex;
+    margin-left: 20vw;
+    padding-top: 5vh;
+}
+
+.imag_cont2{
+    width: 22vw;
+    height: auto;
+}
+
+.cont2_interno{
+    margin-left: 5vw;
+    padding-top: 2vh;
+}
+
+.cont2_interno>h2{
+    font-size: 30px;
+}
+
+.lista_suplementos{
+    font-size: 20px;
+    margin-left: 2vw;
+    margin-top: 2vh;
+}
+
+.contenido3{
+    display: flex;
+    padding-top: 5vh;
+    flex-direction: column;    
+    margin-left: 18vw;
+}
+
+.titulo_cont3{
+    font-family: var(--letra_titulo_contenido);
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding-top: 1vh;
+}
+
+.parrafo_cont3{
+    font-family: var(--letra_contenido);
+    margin-top: 1vh;
+    font-size: 28px;
+}
+
+.h2_cont3{
+    font-family: var(--letra_titulo_contenido);
+    margin-top: 2vh;
+    font-size: 35px;
+}
+
+.imag_cont3{
+    margin-top: 1vh;
+    width: 40vw;
+    height: auto;
+}
+
+.enlaces_externas{
+    color: red;
+}
+
+.enlaces_externas:hover{
+    color: rgb(165, 5, 5);
+}
+
+.contenido4{
+    display: flex;
+    margin-left: 20vw;
+    padding-top: 5vh;
+}
+
+.imag_cont4{
+    width: 25vw;
+    height: auto;
+}
+
+.lista_proteinas{
+    font-size: 20px;
+    margin-left: 5vw;
+    margin-top: 10vh;
+}
+
+.ejemplo{
+    font-family: var(--letra_contenido);
+    margin-top: 1vh;
+    font-size: 24px;
+    margin-right: 34vw;
+    margin-bottom: 2vh;
+}
+
+.imag_sueño{
+    width: 25vw;
+    height: auto;
+    margin-left: 4vw;
+}
+
+.sup_sueño{
+    padding-left: 3vw;
+}
+
+.li_sueño{
+    font-family: var(--letra_contenido);
+    font-size: 28px;
+    margin-top: 1vh;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titulo_nav {
+        margin-bottom: 10px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .titulo_cont1{
+        font-size: 40px;
+    }
+
+    .parrafo1, .parrafo1>p{
+        font-size: 20px;
+        margin-left: 4vw;
+    }
+
+    .enlaces {
+        margin: 10px;
+        font-size: 20px;
+    }
+
+    .texto_incio{
+        font-size: 15px;
+    }
+
+    .contenido3{   
+        margin-left: 10vw;
+    }
+    
+    .contenido2{   
+        margin-left: 10vw;
+    }
+    
+    .contenido4{   
+        margin-left: 10vw;
+    }
+}

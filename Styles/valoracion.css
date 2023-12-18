@@ -1,0 +1,138 @@
+@import url('https://paletadecolores.com.mx/paleta/13141a/a90448/fb3640/fda543/17c69b/');
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&family=Fjalla+One&family=Inter:wght@100&family=Josefin+Sans:wght@200&family=Permanent+Marker&family=Roboto:wght@900&family=Saira+Extra+Condensed:wght@100&family=Yanone+Kaffeesatz:wght@200&display=swap');
+
+:root{
+    --color1: #13141a;
+    --color2: #a90448;
+    --color3: #fb3640;
+    --color4: #fda543;
+    --color5: #ffce96;
+
+    --letra_nav: 'Roboto', sans-serif;
+    --letra_titulo: 'Dhurjati', sans-serif;
+    --letra_texto_inicial: 'Inter', sans-serif;
+    --letra_titulo_contenido:'Permanent Marker', cursive;
+    --letra_contenido: 'Josefin Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color5);    
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin-bottom: 1vh;
+}
+
+.secciones{
+    width: 30vw;
+    height: auto;
+}
+
+form {
+    background-color: var(--color4);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+}
+
+h1 {
+    font-family: var(--letra_titulo_contenido);
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--color1);
+}
+
+label, p {
+    font-family: var(--letra_contenido);
+    display: flex;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.input_cuadros{
+    width: 2vw;
+}
+
+.rango{
+    width: 100%;
+}
+
+.rango:hover{
+    background-color: rgb(228, 228, 228);
+}
+
+select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.enviar {
+    display: flex;
+    justify-content: center;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    text-decoration: none;
+    height: 4vh;
+}
+
+.cancelar{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 0, 0);
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    height: 4vh;
+    color: white;
+    margin-top: 1vh;
+    text-decoration: none;
+  }
+
+.cancelar:hover{
+    background-color: rgb(153, 4, 4);
+}
+
+.enviar:hover {
+    background-color: #45a049;
+}
+
+/* Nuevos estilos para dispositivos móviles y tabletas */
+@media screen and (max-width: 768px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .secciones{
+        padding-left: 20vw;
+        margin-top: 1vh;
+        width: 100vw;
+    }
+
+    .valoracion{
+        height: 50vh;
+    }
+
+    .input_cuadros{
+        margin-left: 1vw;
+    }
+}
